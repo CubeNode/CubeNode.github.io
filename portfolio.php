@@ -105,6 +105,9 @@
 			<input type="submit" name="submit" value="send" class="btn" align="right">
 		  </div>
 		</div>
+		<?php
+		  echo "bump";
+		?>	  
 		<div class="col-12 text-center" style="background-color: #333;">
 		  <h4 style="color:#FFF; margin-top: 1em;">Around the web</h4>
 		  <a href="https://github.com/CubeNode" target="_blank"><i class="fa fa-github"></i></a>
@@ -113,8 +116,6 @@
 		</div>
 	  </div>
 	</div>
-	<?php
-		  echo "bump";
-		?>
+	
   </body>
 </html>
