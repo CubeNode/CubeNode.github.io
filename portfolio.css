@@ -49,11 +49,7 @@ body {
 
 @media screen and (max-width: 800px) {
 	.nav-b a {
-		padding: 14px 16px;
-	}
-	
-	.section {
-		float: left;
+		padding: 14px 20px;
 	}
 }
 
