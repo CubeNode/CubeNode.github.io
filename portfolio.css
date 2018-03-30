@@ -47,6 +47,12 @@ body {
 	border-bottom: 3px solid #e08311;
 }
 
+@media and screen (max-width: 600px) {
+	.nav-b a {
+		padding: 6px 8px;
+	}
+}
+
 /*home*/
 #home {
 	--light-blue: #95B8E3;
