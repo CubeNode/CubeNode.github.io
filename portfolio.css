@@ -93,7 +93,7 @@ body {
 }
 
 #work hr {
-	width: 10%;
+	width: 10em;
 	color: #FFF;
 	border-color: #FFF;
 	border-width: 2px;
@@ -227,7 +227,7 @@ body {
 }
 
 #contact hr {
-	width: 10%;
+	width: 10em;
 	border-color: #FFF;
 	border-width: 2px;
 	color: #FFF;
