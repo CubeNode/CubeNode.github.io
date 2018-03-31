@@ -49,7 +49,7 @@ body {
 
 @media screen and (max-width: 800px) {
 	.nav-b {
-		padding-right: 25px;
+		padding-right: 15px;
 	}
 	
 	.nav-b a {
