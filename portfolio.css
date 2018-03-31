@@ -48,9 +48,30 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-	.nav-b a {
-		padding: 14px 8px;
+	.nav-b {
+		padding-right: 35px;
 	}
+	
+	.nav-b a {
+	  padding: 14px 8px;
+	  padding-right: 18px;
+	}
+	
+	.fa-arrow-up {
+	  color: #FFF;
+	  background-color: #393B45;
+	  font-size: 35px;
+	  width: 45px;
+	  opacity: 0;
+        }
+	
+	.return {
+	  position: fixed;
+	  margin-top: 50em;
+	  margin-left: 9em;
+	  opacity: .5;
+	  z-index: 8;
+        }
 }
 
 /*home*/
@@ -298,5 +319,11 @@ body {
 @media screen and (max-width: 800px) {
 	#contact .btn {
 		width: 20em;
+	}
+	
+	.fa-github, .fa-free-code-camp, .fa-envelope{
+		margin: .2em .2em .4em .2em;
+		font-size: 50px;
+		color: #FFF;
 	}
 }
