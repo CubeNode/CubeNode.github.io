@@ -226,13 +226,13 @@ body {
 #about h3 {
 	word-wrap: normal;
 	font-family: 'Didact Gothic', sans-serif;
-	color: #498fff;
+	color: #fff;
 	margin-bottom: 5%;
 }
 
 .bio {
-	color: #4662f2;
-	background-color: white;
+	color: #FFF;
+	background-color: #000080;
 }
 
 .skills {
