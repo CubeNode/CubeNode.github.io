@@ -177,6 +177,15 @@ body {
 	background-color: #333;
 }
 
+#t-overlay {
+	font-family: 'Keania One', cursive;
+	color: #FFF;
+}
+
+#twitch-overlay {
+	background-color: #881BB7;
+}
+
 #work .btn {
 	position:relative;
 	margin: 15% 10%;
