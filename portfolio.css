@@ -219,6 +219,12 @@ body {
 	
 }
 
+@media screen and (max-width: 800px) {
+	#work {
+		padding-bottom: 0;
+	}
+}
+
 /*about*/
 #about {
 	background-color: #4d5063;
@@ -257,9 +263,22 @@ body {
 	font-family: 'Didact Gothic', sans-serif;
 }
 
+#about li {
+	color: white;
+	margin: 0%;
+	margin-top: 2%;
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
 @media screen and (max-width: 800px) {
 	#about h4 {
 		font-size: 1.2em;
+	}
+	
+	#about li {
+		margin-top: 10%;
 	}
 }
 
