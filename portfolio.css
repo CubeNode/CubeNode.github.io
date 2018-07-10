@@ -143,7 +143,7 @@ body {
 }
 
 #w-overlay {
-	font-family: 'Keania One', cursive;
+	font-family: 'Fjalla One', sans-serif;
 	color: #FFD801;
 }
 
@@ -152,7 +152,7 @@ body {
 }
 
 #r-overlay {
-	font-family: 'Keania One', cursive;
+	font-family: 'Fjalla One', sans-serif;
 	color: #39F;
 }
 
@@ -161,7 +161,7 @@ body {
 }
 
 #wa-overlay {
-	font-family: 'Keania One', cursive;
+	font-family: 'Fjalla One', sans-serif;
 	color: #FFF;
 }
 
@@ -170,7 +170,7 @@ body {
 }
 
 #g-overlay {
-	font-family: 'Keania One', cursive;
+	font-family: 'Fjalla One', sans-serif;
 	color: #FFF;
 }
 
@@ -179,12 +179,21 @@ body {
 }
 
 #t-overlay {
-	font-family: 'Keania One', cursive;
+	font-family: 'Fjalla One', sans-serif;
 	color: #FFF;
 }
 
 #twitch-overlay {
 	background-color: #881BB7;
+}
+
+#s-overlay {
+	font-family: 'Fjalla One', sans-serif;
+	color: #FFF;
+}
+
+#survey-overlay {
+	background-color: #05b749;
 }
 
 #work .btn {
