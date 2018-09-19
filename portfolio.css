@@ -1,368 +1,60 @@
-body {
-	position: relative;
-}
-.fa-arrow-up {
-	color: #FFF;
-	background-color: #393B45;
-	font-size: 50px;
-	width: 60px;
-	opacity: 0;
+html body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.return {
-	position: fixed;
-	margin-top: 40%;
-	margin-left: 90%;
-	z-index: 1;
+canvas {
+  position: absolute;
+  background-color: #282828;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
 }
 
-.nav-b {
-	list-style-type: none;
-	margin: 0;
-	overflow: hidden;
-	background-color: #393B45;
+.sections {
+  color: #FFF;
+  width: 25%;
+  text-align: center;
+  z-index: 1;
 }
 
-.section {
-	float: right;
-}
-
-.home {
-	float: left;
-}
-
-.nav-b a {
-	display: block;
-	padding: 14px 16px;
-	color: white;
-}
-
-.nav-b a:hover {
-	text-decoration: none;
-	color: white;
-}
-
-.active {
-	background-color: rgba(250,250,255,0.05);
-	border-bottom: 3px solid #e08311;
-}
-
-@media screen and (max-width: 800px) {
-	.nav-b {
-		padding-right: 5px;
-	}
-	
-	.nav-b a {
-	 	padding: 14px 8px;
-	}
-	
-	.fa-arrow-up {
-	  color: #FFF;
-	  background-color: #393B45;
-	  font-size: 35px;
-	  width: 45px;
-	  opacity: 0;
-        }
-	
-	.return {
-	  position: fixed;
-	  margin-top: 22em;
-	  margin-left: 8.5em;
-	  opacity: .5;
-	  z-index: 8;
-        }
-}
-
-/*home*/
 #home {
-	--light-blue: #95B8E3;
-	background-color: #2b325b;
-	color: white;
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50vh;
 }
 
-#home h1 {
-	--light-green: #0FE850;
-	margin-top: 8em;
+.btn {
+  border: solid 5px #FFF;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding-top: 130px;
 }
 
-#home .btn {
-	width: 10em;
-	color: #FFF;
-	background-color: #2b325b;
-	border: 3px solid #FFF;
-	margin-top: 15%;
-	margin-bottom: 15%;
-	outline: none;
+#work-btn {
+  position: absolute;
+  top: 10%;
+  left: 40%;
 }
 
-#home .btn:hover {
-	background-color: #FFF;
-	color: #000;
+#about-btn {
+  position: absolute;
+  top: 65%;
+  left: 10%;
 }
 
-@media screen and (max-width: 800px) {
-	#home h1 {
-		margin-top: 4em;
-	}
-	
-	#home .btn {
-		width: 8em;
-		margin-bottom: 8em;
-	}
+#contact-btn {
+  position: absolute;
+  top: 65%;
+  left: 70%;
 }
 
-/*work*/
-#work {
-	background-color: #4f5777;
-	padding-bottom: 12em;
-}
-
-#work h1 {
-	color: #FFF;
-	margin-top: 3%;
-	margin-bottom: 2%;
-	font-family: 'Aldrich', sans-serif;
-}
-
-#work hr {
-	width: 10em;
-	color: #FFF;
-	border-color: #FFF;
-	border-width: 2px;
-}
-
-#sites {
-	margin-top: 3%;
-}
-
-#work h2 {
-	position: relative;
-	margin-top: 20%;
-	font-size: 4em;
-	z-index: 5;
-}
-
-#w-overlay {
-	font-family: 'Fjalla One', sans-serif;
-	color: #FFD801;
-}
-
-#wiki-overlay {
-	background-color: #0FBBDD;
-}
-
-#r-overlay {
-	font-family: 'Fjalla One', sans-serif;
-	color: #39F;
-}
-
-#rqm-overlay {
-	background-color: #FFF;
-}
-
-#wa-overlay {
-	font-family: 'Fjalla One', sans-serif;
-	color: #FFF;
-}
-
-#weather-overlay {
-	background-color: #000;
-}
-
-#g-overlay {
-	font-family: 'Fjalla One', sans-serif;
-	color: #FFF;
-}
-
-#game-overlay {
-	background-color: #333;
-}
-
-#t-overlay {
-	font-family: 'Fjalla One', sans-serif;
-	color: #FFF;
-}
-
-#twitch-overlay {
-	background-color: #881BB7;
-}
-
-#s-overlay {
-	font-family: 'Fjalla One', sans-serif;
-	color: #FFF;
-}
-
-#survey-overlay {
-	background-color: #05b749;
-}
-
-#work .btn {
-	position:relative;
-	margin: 15% 10%;
-	color: #FFF;
-	border: 2px solid #FFF;
-	opacity: 1;
-	z-index: 4;
-	outline: none;
-}
-
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width:100%;
-	height: 100%;
-	z-index: 4;
-}
-
-.imgs {
-	list-style-type: none;
-	display: block;
-	
-}
-
-.list-image {
-	
-	
-}
-
-@media screen and (max-width: 800px) {
-	#work {
-		padding-bottom: 0;
-	}
-}
-
-/*about*/
 #about {
-	background-color: #4d5063;
-}
 
-#about h1 {
-	margin-top: 10%;
-	font-family: 'Aldrich', sans-serif;
-}
-
-#about h2 {
-	color: #000;
-	margin-top: 10%;
-}
-
-#about h3 {
-	word-wrap: normal;
-	font-family: 'Didact Gothic', sans-serif;
-	color: #fff;
-	margin-bottom: 5%;
-}
-
-.bio {
-	color: #FFF;
-	background-color: #000080;
-}
-
-.skills {
-	color: #FFF;
-	background-color: #4662f2;
-}
-
-#about h4 {
-	color: white;
-	margin: 1%;
-	font-family: 'Didact Gothic', sans-serif;
-}
-
-#about li {
-	color: white;
-	margin: 0%;
-	margin-top: 2%;
-	font-family: 'Didact Gothic', sans-serif;
-	font-size: 1.5em;
-	font-weight: bold;
-}
-
-@media screen and (max-width: 800px) {
-	#about h4 {
-		font-size: 1.2em;
-	}
-	
-	#about li {
-		margin-top: 10%;
-	}
-}
-
-/*contact*/
-#contact {
-	background-color: #739ef4;
-}
-
-#contact h1 {
-	color: white;
-	font-family: 'Aldrich', sans-serif;
-	margin: 2%;
-}
-
-#contact hr {
-	width: 10em;
-	border-color: #FFF;
-	border-width: 2px;
-	color: #FFF;
-}
-
-#contact p {
-	font-size: 1.5em;
-	color: #FFF;
-	margin-top: 5%;
-}
-
-.form-group {
-	margin: 0 auto;
-	margin-top: 5%;
-	margin-bottom: 3%;
-}
-
-.form-control {
-	margin: .3em auto;
-	width: 100%;
-	background-color: #FFF;
-	border-radius: 0px;
-}
-
-#contact .btn {
-	margin-bottom: 5%;
-	margin-left: auto;
-	width: 20%;
-	background-color: #FFF;
-	border: 2px solid white;
-	color: #333;
-	outline: none;
-}
-
-#contact .btn:hover {
-	color: #333;
-	background-color: #FFF;
-}
-
-#contact .btn:active {
-	color: #393B45;
-	background-color: white;
-}
-
-.fa-github, .fa-free-code-camp, .fa-envelope{
-	margin: 2% 1%;
-	font-size: 50px;
-	color: #FFF;
-	
-}
-
-@media screen and (max-width: 800px) {
-	#contact .btn {
-		width: 20em;
-	}
-	
-	.fa-github, .fa-free-code-camp, .fa-envelope{
-		margin: .2em .2em .4em .2em;
-		font-size: 50px;
-		color: #FFF;
-	}
+ /*height: 100vh;*/
 }
