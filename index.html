@@ -1,129 +1,119 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Emblema+One|Modak|Keania+One|Fredoka+One|Aldrich|Didact+Gothic|Fjalla+One" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Modak|Aldrich|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	<script type="text/javascript" src="portfolio.js"></script>
-	<title>Clint Jones | Portfolio</title>
+	  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Clint Jones | Portfolio</title>
   </head>
   <body>
-    <ul class="nav-b fixed-top">
-	  <li class="home "><a class="section active" href="#home">Home</a></li>
-	  <li class="section"><a href="#contact">Contact</a></li>
-	  <li class="section"><a href="#about">About</a></li>
-	  <li class="section"><a href="#work">Work</a></li>
-	</ul>
-	<div class="return text-center"><a href="#home"><i class="fa fa-arrow-up"></i></a></div>
-	<div class="container-fluid">
-	  <div class="row">
-	    <div class="col-12 text-center" id="home">
-		  <h1>
-		    Front End Developer - UX/UI Designer
+    <canvas id="canvas"></canvas>
+    <nav>
+      <ul class="nav fixed-top">
+        <li class="sections home"><a href="#home">HOME</a></li>
+        <li class="sections"><a href="#about">ABOUT</a></li>
+        <li class="sections"><a href="#work">WORK</a></li>
+        <li class="sections"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <section id="home">
+      <h1>
+		    Front End Developer - UX/UI Developer
 		  </h1>
-		  <h3>
-		    Designing Responsive User Interface, for a great User Experience.
-		  </h3>
-		  <a href="#work"><button class="btn">My Work</button></a>
-		  <a href="#contact"><button class="btn">Contact Me</button></a>
-		</div>
-		<div class="col-12" style="background-color: #393B45; color: #FFF;"></div>
-		<div class="col-12 text-center" id="work">
-		  <h1>Projects</h1><hr>
-		  <div class="row justify-content-center" id="sites">
-		    <div class="col-xs-1 col-sm-12 col-md-4 col-lg-4 col-xl-3 text-center sites wiki-site">
-			  <h2 id="w-overlay">Wikipedia<br> Search</h2>
-			  <div class="overlay" id="wiki-overlay"></div>
-			  <a href="https://codepen.io/MayorJoe/full/MrdgJY/" target="_blank"><button class="btn" style="color: #FFF; background-color: #0FBBDD; border: 2px solid #FFF;">View More</button></a>
-			</div>
-			<div class="col-xs-1 col-sm-12 col-md-4 col-lg-4 col-xl-3 text-center sites rqm-site">
-			  <h2 id="r-overlay">Random Quote Machine</h2>
-			  <div class="overlay" id="rqm-overlay"></div>
-			  <a href="https://codepen.io/MayorJoe/full/LeJWYg/" target="_blank"><button class="btn" style="color: #39F; background-color: #FFF; border: 2px solid #39F;">View More</button></a>
-			</div>
-			<div class="col-xs-1 col-sm-12 col-md-4 col-lg-4 col-xl-3 text-center sites weather-site">
-			  <h2 id="wa-overlay">Weather<br> App</h2>
-			  <div class="overlay" id="weather-overlay"></div>
-			  <a href="https://cubenode.github.io/Weather-App/" target="_blank"><button class="btn" style="color: #FFF; background-color: #000; border: 2px solid #FFF;">View More</button></a>
-			</div>
-			
-		  </div>
-		  <div class="row justify-content-center">
-		    <div class="col-xs-1 col-sm-12 col-md-4 col-lg-4 col-xl-3 text-center sites vgc-site">
-			  <h2 id="g-overlay">Virtual Game Console</h2>
-			  <div class="overlay" id="game-overlay"></div>
-			  <a href="https://cubenode.github.io/Virtual-Game-Console/" target="_blank"><button class="btn" style="color: #FFF; background-color: #333; border: 2px solid #FFF;">View More</button></a>
-			</div>
-			<div class="col-xs-1 col-sm-12 col-md-4 col-lg-4 col-xl-3 text-center sites twitch-site">
-			  <h2 id="t-overlay">Twitch Stream App</h2>
-			  <div class="overlay" id="twitch-overlay"></div>
-			  <a href="https://codepen.io/MayorJoe/full/MVxboW/" target="_blank"><button class="btn" style="color:#FFF; background-color: #881BB7; border: 2px solid #FFF">View More</button></a>
-			</div>
-			<div class="col-xs-1 col-sm-12 col-md-4 col-lg-4 col-xl-3 text-center sites survey-site">
-			  <h2 id="s-overlay">Survey Form Sample</h2>
-			  <div class="overlay" id="survey-overlay"></div>
-			  <a href="https://codepen.io/MayorJoe/full/QxJXeg/" target="_blank"><button class="btn" style="color:#FFF; background-color: #05b749; border: 2px solid #FFF">View More</button></a>
-			</div>
-		  </div>
-		</div>
-		<div class="col-12 text-center" id="about">
-		  <div class="row">
-		    <div class="col-xs-1 col-xl-6 bio">
-			  <h1>About Me</h1><hr>
-		      <h3 style="margin-top: 10%;">
-			    Hi. I'm Clint, an up-and-coming Front-End Developer.<br> 
-			    I build responsive websites, and accessible UI.<br>
-				I'm always learning and testing new design skills, and looking for new challenges.<br>
-				When I'm not coding websites, I'm dabbling in game, and/or app development.
-			  </h3>
-		    </div>
-		    <div class="col-xs-1 col-xl-6 skills">
-			  <h1>Skills</h1><hr>
-			  <div class="row">
-			    <div class="col-6">
-			      <ul class="text-left">
-			        <li>HTML</li>
-				    <li>CSS</li>
-				    <li>Javascript</li>
-					<li>jQuery</li>
-					<li>Boostrap</li>
-			      </ul>
-				</div>
-				<div class="col-6">
-				  <ul class="text-left">
-				    <li>Responsive Design</li>
-					<li>User interface design</li>
-					<li>Landing page design</li>
-					<li>API integration</li>
-				  </ul>
-				</div>
-			  </div>
-			  <h4 style="margin-top: 32%; margin-bottom: 5%;">more to come!</h4>
-		    </div>
-		  </div>
-		</div>
-		<div class="col-12 text-center" id="contact">
-		  <h1>Contact Me</h1><hr>
-		  <p>If you have a project in mind,<br> or your site just needs a touch up, feel free to contact me!</p>
-		  <form action="https://formspree.io/cjjones973@yahoo.com" method="post" class="form-group  col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4 row">
-		    <input class="form-control" type="text" required name="name" placeholder="Name">
-		    <input class="form-control" type="email" required name="email" placeholder="Email">
-		    <input class="form-control" type="tel" name="phone" placeholder="Phone number">
-		    <textarea class="form-control" name="message" required placeholder="Message" rows="6"></textarea>
-		    <input type="submit" value="send" class="btn" align="right">
-			<input type="text" name="_gotcha" style="display: none;">
-		  </form>
-		</div>
-		<div class="col-12 text-center" style="background-color: #333;">
-		  <h4 style="color:#FFF; margin-top: 1em;">Around the web</h4>
-		  <a href="https://github.com/CubeNode" target="_blank"><i class="fa fa-github"></i></a>
-		  <a href="https://www.freecodecamp.org/cjones" target="_blank"><i class="fa fa-free-code-camp"></i></a>
-		  <a href="#"><i class="fa fa-envelope"></i></a>
-		</div>
-	  </div>
-	</div>
+		  <h2>
+		    I Develop Responsive User Interface, for a great User Experience.
+		  </h2>
+      <a href="#work" class="btn" id="work-btn">WORK</a>
+      <a href="#contact" class="btn" id="contact-btn">CONTACT</a>
+      <div class="to-about">
+        <a href="#about" class="" id="about-btn">ABOUT ME</a>
+        <p>&darr;</p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about-me">
+        <h3>About Me</h3>
+        <p>
+  			  Hi. I'm a Front-End Developer.
+  			  I build responsive websites, and intuitive UI.
+  				I'm always learning and testing new design skills, and looking for new challenges.
+  			</p>
+      </div>
+      <div class="skills">
+        <h4>Skills</h4>
+
+        <div class="left side">
+          <div class="stat-holder">
+            <div class="stat-bar"><div class="stat" id="stat-html"><p style="float:left; margin:10px 10px;">HTML</p></div><p style="float:right; margin:10px 10px; position:absolute;">80%</p></div>
+          </div>
+
+          <div class="stat-holder">
+            <div class="stat-bar"><div class="stat" id="stat-css"><p style="float:left; margin:10px 10px;">CSS</p></div><p style="float:right; margin:10px 10px; position:absolute;">80%</p></div>
+          </div>
+
+
+          <div class="stat-holder">
+            <div class="stat-bar"><div class="stat" id="stat-js"><p style="float:left; margin:10px 10px;">JavaScript</p></div><p style="float:right; margin:10px 10px; position:absolute;">70%</p></div>
+          </div>
+
+          <div class="stat-holder">
+            <div class="stat-bar"><div class="stat" id="stat-jq"><p style="float:left; margin:10px 10px;">jQuery</p></div><p style="float:right; margin:10px 10px; position:absolute;">65%</p></div>
+          </div>
+        </div>
+
+        <div class="right side">
+          <div class="stat-holder">
+            <div class="stat-bar"><div class="stat" id="stat-sass"><p style="float:left; margin:10px 10px;">Sass/Scss</p></div><p style="float:right; margin:10px 10px; position:absolute;">75%</p></div>
+          </div>
+
+          <div class="stat-holder">
+            <div class="stat-bar"><div class="stat" id="stat-ui"><p style="float:left; margin:10px 10px;">UI/UX Design</p></div><p style="float:right; margin:10px 10px; position:absolute;">70%</p></div>
+          </div>
+
+          <div class="stat-holder">
+            <div class="stat-bar"><div class="stat" id="stat-api"><p style="float:left; margin:10px 10px;">Restful API</p></div><p style="float:right; margin:10px 10px; position:absolute;">60%</p></div>
+          </div>
+
+          <div class="stat-holder">
+            <div class="stat-bar"><div class="stat" id="stat-react"><p style="float:left; margin:10px 10px;">React</p></div><p style="float:right; margin:10px 10px; position:absolute;">10%</p></div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <section id="work">
+      <h3>Projects</h3>
+      <a href="https://cubenode.github.io/wiki-search/" target="_blank">
+        <img src="images/wiki.png" alt="wiki-search-screenshot">
+      </a>
+      <a href="https://cubenode.github.io/RandomQuoteMachine/" target="_blank">
+        <img src="images/rqm.png" alt="quote-machine-screenshot">
+      </a>
+    </section>
+    <section id="contact">
+
+      <div class="form">
+        <h3>Contact me<span>.</span></h3>
+        <p>If you have a project in mind,<br> or your site just needs a touch up, feel free to contact me!</p>
+        <form action="https://formspree.io/cjjones973@yahoo.com" method="post" class="form-group  col-xs-12 col-sm-12 col-md-6 col-lg-5 col-xl-4 row">
+  		    <input class="form-control" type="text" required name="name" placeholder="Name">
+  		    <input class="form-control" type="email" required name="email" placeholder="Email">
+  		    <input class="form-control" type="tel" name="phone" placeholder="Phone number">
+  		    <textarea class="form-control" name="message" required placeholder="Message" rows="6"></textarea>
+  		    <input type="submit" value="send" class="btn" align="right">
+  			  <input type="text" name="_gotcha" style="display: none;">
+  		  </form>
+      </div>
+      <div class="icons">
+        <a href="https://github.com/CubeNode" target="_blank"><i class="fab fa-github"></i></a>
+  		  <a href="https://www.freecodecamp.org/cjones" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+  		  <a href="#"><i class="fa fa-envelope"></i></a>
+      </div>
+    </section>
+    <script type="text/javascript" src="portfolio.js"></script>
   </body>
 </html>
