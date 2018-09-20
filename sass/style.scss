@@ -64,19 +64,19 @@ nav {
   color: #FFF;
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 
   h1 {
     font-size: 50px;
     font-family: $main-font;
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
     margin-top: 40vh;
   }
 
   h2 {
     font-size: 25px;
     font-family: $main-font;
-    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
   }
 
   .btn {
@@ -133,10 +133,10 @@ nav {
   background-color: #FFF;
   color: #0e2f60;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 
   .about-me {
-    height: 40vh;
+    min-height: 40vh;
 
     h3 {
       background: -webkit-linear-gradient(#0e2f60, #1d75f9);
@@ -155,9 +155,14 @@ nav {
     }
 
     @media screen and (max-width: 650px) {
+      h3 {
+        padding-top: 20px;
+      }
+
       p {
         margin: 0 0;
         margin-top: 1em;
+        margin-bottom: 1em;
       }
     }
   }
@@ -296,7 +301,7 @@ nav {
   $green-bg-color: #10edb1;
 
   color: #FFF;
-  height: 100vh;
+  min-height: 100vh;
 
   h3 {
     text-align: center;
@@ -317,11 +322,12 @@ nav {
 
   .form {
     background-color: $orange-bg-color;
-    height: 90vh;
+    min-height: 90vh;
+
     .form-group {
     	margin: 0 auto;
     	margin-top: 5%;
-    	margin-bottom: 3%;
+      padding-bottom: 20px;
     }
 
     input {
@@ -354,7 +360,7 @@ nav {
 
   .icons {
     background-color: #191919;
-    height: 10vh;
+    min-height: 10vh;
     text-align: center;
 
     .fa-github, .fa-free-code-camp, .fa-envelope {
