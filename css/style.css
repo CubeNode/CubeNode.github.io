@@ -89,6 +89,10 @@ nav .sections {
   text-decoration: none;
 }
 @media screen and (max-width: 600px) {
+  #home h1 {
+    font-size: 30px;
+    margin-top: 20vh;
+  }
   #home .btn {
     width: 15em;
     height: 50px;
