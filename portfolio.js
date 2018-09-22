@@ -82,8 +82,6 @@ function init() {
   }
 }
 
-
-
 function animate() {
   requestAnimationFrame(animate);
 
@@ -96,3 +94,25 @@ function animate() {
 
 init();
 animate();
+
+
+/***** Smooth Scroll *****/
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+/*document.getElementById("#about-btn").onclick = function() {scrollo()};
+
+function scrollo() {
+  document.querySelector('#about').scrollIntoView({
+    behavior: 'smooth'
+  });
+}*/
+/*document.querySelector('#about').scrollIntoView({
+  behavior: 'smooth'
+});*/
