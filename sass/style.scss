@@ -264,6 +264,7 @@ nav {
     @media screen and (max-width: 1000px) {
 
       h4 {
+        padding-top: 30px;
         margin-bottom: 1em;
       }
 
@@ -290,14 +291,21 @@ nav {
     width: 47%;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 20px;
+    margin-left: 2vw;
     box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.5);
   }
 
   @media screen and (max-width: 800px) {
+
+    h3 {
+      padding-top: 1em;
+      padding-bottom: 20px;
+    }
+
     img {
+      display: block;
       width: 90%;
-      margin: 25px;
+      margin: 20px auto;
     }
   }
 
