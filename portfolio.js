@@ -106,13 +106,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-/*document.getElementById("#about-btn").onclick = function() {scrollo()};
-
-function scrollo() {
-  document.querySelector('#about').scrollIntoView({
-    behavior: 'smooth'
-  });
-}*/
-/*document.querySelector('#about').scrollIntoView({
-  behavior: 'smooth'
-});*/
