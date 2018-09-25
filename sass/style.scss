@@ -24,11 +24,37 @@ canvas {
 
 nav {
 
+
   ul {
+    position: fixed;
+    top: -50px;
+    transition: top 0.3s;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style: 0;
-    background-color: rgba(40, 40, 40, 0.5);
+    background-color: rgba(40, 40, 40, 0.8);
+
+    i {
+      margin: 10px 0;
+      margin-right: 5%;
+    }
+
+    .home {
+      background-color: rgba(16, 237, 177, 0.8);
+    }
+
+    .about {
+      background-color: rgba(56, 192, 255, 0.8);
+    }
+
+    .work {
+      background-color: rgba(255, 12, 12, 0.8);
+    }
+
+    .contact {
+      background-color: rgba(255, 149, 12, 0.8);
+    }
   }
 
   li {
@@ -52,9 +78,13 @@ nav {
     text-align: center;
     z-index: 1;
   }
+
+  @media screen and (max-width: 600px) {
+    .sections {
+      font-size: 15px;
+    }
+  }
 }
-
-
 
 #home {
   $gradient: linear-gradient(to bottom right, #f4a142, #f44242);
@@ -79,8 +109,23 @@ nav {
     text-shadow: 3px 3px rgba(0, 0, 0, 0.5);
   }
 
-  .btn {
+  .icons {
+    display: inline-block;
 
+    p {
+      font-family: 'Archivo Black', sans-serif;
+      margin-top: 20px;
+      visibility: hidden;
+    }
+  }
+
+  .icons:hover {
+    p {
+      visibility: visible;
+    }
+  }
+
+  .btn {
   	color: #FFF;
     background: $gradient;
     width: 80px;
