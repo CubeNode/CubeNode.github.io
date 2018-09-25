@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Modak|Aldrich|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=RobotoArchivo+Black" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	  <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,11 +12,11 @@
   <body>
     <canvas id="canvas"></canvas>
     <nav>
-      <ul class="nav fixed-top">
-        <li class="sections home"><a href="#home">HOME</a></li>
-        <li class="sections"><a href="#about">ABOUT</a></li>
-        <li class="sections"><a href="#work">WORK</a></li>
-        <li class="sections"><a href="#contact">CONTACT</a></li>
+      <ul class="nav" id="navbar">
+        <li class="sections home"><a href="#home"><i class="fas fa-home"></i>HOME</a></li>
+        <li class="sections about"><a href="#about"><i class="fas fa-user"></i>ABOUT</a></li>
+        <li class="sections work"><a href="#work"><i class="fas fa-cogs"></i>WORK</a></li>
+        <li class="sections contact"><a href="#contact"><i class="fas fa-mobile-alt"></i>CONTACT</a></li>
       </ul>
     </nav>
     <section id="home">
@@ -26,9 +26,18 @@
 		  <h2>
 		    I Develop Responsive User Interface, for a great User Experience.
 		  </h2>
-      <a href="#about" class="btn" id="about-btn"><i class="fas fa-user"></i></a>
-      <a href="#work" class="btn" id="work-btn"><i class="fas fa-cogs"></i></a>
-      <a href="#contact" class="btn" id="contact-btn"><i class="fas fa-phone"></i></a>
+      <div class="icons">
+        <a href="#about" class="btn" id="about-btn"><i class="fas fa-user"></i></a>
+        <p>ABOUT ME</p>
+      </div>
+      <div class="icons">
+        <a href="#work" class="btn" id="work-btn"><i class="fas fa-cogs"></i></a>
+        <p>WORK</p>
+      </div>
+      <div class="icons">
+        <a href="#contact" class="btn" id="contact-btn"><i class="fas fa-mobile-alt"></i></a>
+        <p>CONTACT</p>
+      </div>
     </section>
     <section id="about">
       <div class="about-me">
