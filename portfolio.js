@@ -54,7 +54,7 @@ function particle(x, y, radius, color, glow) {
   this.distanceFromCenter = {x:randomIntFromRange(0, 1000),
     y:randomIntFromRange(0, 600)};
 
-  this. update = () => {
+  this.update = () => {
     this.radians += this.velocity;
     this.x = x + Math.cos(this.radians) * this.distanceFromCenter.x;
     this.y = y + Math.sin(this.radians) * this.distanceFromCenter.y;
@@ -113,6 +113,6 @@ function scrollFunction() {
   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "-100px";
   }
 }
