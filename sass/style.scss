@@ -343,12 +343,34 @@ nav {
     padding-top: 3em;
   }
 
-  img {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    box-sizing: inherit;
+    background-color: #FFF;
     width: 47%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 2vw;
-    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.5);
+    padding: 20px 15px;
+    margin: 10px;
+    border: 1px solid #EEE;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    .description {
+      background-color: #EEE;
+      font-style: italic;
+      padding: 30px;
+    }
+
+    .stack {
+      font-weight: bold;
+    }
+  }
+
+  img {
+    width: 100%;
   }
 
   @media screen and (max-width: 800px) {
@@ -358,10 +380,14 @@ nav {
       padding-bottom: 20px;
     }
 
-    img {
+    .projects {
       display: block;
-      width: 90%;
       margin: 20px auto;
+    }
+
+    .project {
+      width: 90%;
+      margin: auto;
     }
   }
 
