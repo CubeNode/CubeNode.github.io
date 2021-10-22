@@ -349,11 +349,11 @@ nav {
   }
 
   .project {
-    box-sizing: inherit;
+    box-sizing: border-box;
     background-color: #FFF;
     width: 47%;
     padding: 20px 15px;
-    margin: 10px;
+    margin: 10px auto;
     border: 1px solid #EEE;
     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -380,14 +380,9 @@ nav {
       padding-bottom: 20px;
     }
 
-    .projects {
-      display: block;
-      margin: 20px auto;
-    }
-
     .project {
       width: 90%;
-      margin: auto;
+      
     }
   }
 
