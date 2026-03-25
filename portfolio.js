@@ -78,7 +78,7 @@ function init() {
   particles = [];
   for(let i = 0; i < 50; i++) {
     particles.push(new particle(canvas.width / 2,
-      canvas.height / 2, 5, randomColor(colors)));
+      canvas.height / 2, 1, #FFF));
   }
 }
 
